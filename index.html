@@ -8,6 +8,8 @@
 	<title>Serhii Ovsianykov Test Task</title>
 	<script src="js/jQuery.js"></script>
 	<script src="js/script.js"></script>
+	<script src='js/masonry.pkgd.min.js'></script>
+
 </head>
 
 <body>
@@ -17,7 +19,7 @@
 				<img src="./img/backgrounds/logo.png" alt="logo">
 			</div>
 			<div class="burger">
-				<img src="./img/backgrounds/588a64e0d06f6719692a2d10.png" alt="brgr">
+				<img src="img/backgrounds/588a64e0d06f6719692a2d10.png" alt="brgr">
 			</div>
 			<ul>
 				<li><a href="#" class="m"><i class="contact-us"></i></a></li>
@@ -48,7 +50,7 @@
 			</ul>
 		</nav>
 	</header>
-	<div class="container">
+	<div class="container1">
 		<div class="sidebar">
 			<div class="p"><a href="#"><i class="palette"></i><span>ART</span></a></div>
 			<div class="m"><a href="#"><i class="music"></i><span>MUSIC</span></a></div>
@@ -60,12 +62,8 @@
 			<div class="pl"><a href="#"><i class="plus"></i><span>EXTRA</span></a></div>
 			<div class="cg"><a href="#"><i class="cog"></i><span>SETTINGS</span></a></div>
 		</div>
-		<div class="grid-wrapper">
-
-
-
-
-			<div class="box1">
+		<div  id='masonry' >
+			<div class="item">
 				<div class="news" id="one">
 					<div class="pic">
 						<div class="hover">
@@ -74,10 +72,8 @@
 						<img src="img/news/foot.jpg" alt="choose">
 					</div>
 					<div class="iconRow">
-						<div class="iconWrap"><i class="calendar"></i></div>
-						<div>31 mars</div>
-						<div class="iconWrap"><i class="comment"></i></div>
-						<div>5 comments</div>
+						<div class="iconWrap"><i class="calendar"></i><p>31 mars</p></div>
+						<div class="iconWrap"><i class="comment"></i><p>5 comments</p></div>
 					</div>
 					<article>
 						<h1>All sail being set, he now cast
@@ -90,6 +86,8 @@
 							minus modi numquam officia provident, rem saepe sunt tenetur!</p>
 					</article>
 				</div>
+			</div>
+			<div class="item">
 				<div class="news">
 					<div class="pic">
 						<div class="hover">
@@ -97,12 +95,9 @@
 						</div>
 						<img src="img/news/ad.jpg" alt="ch">
 					</div>
-
 				</div>
-
-
 			</div>
-			<div class="box2">
+			<div class="item">
 				<div class="news" id="two">
 					<div class="pic">
 						<div class="hover">
@@ -111,10 +106,8 @@
 						<img src="img/news/robin_thicke.jpg" alt="choose">
 					</div>
 					<div class="iconRow">
-						<div class="iconWrap"><i class="calendar"></i></div>
-						<div>31 mars</div>
-						<div class="iconWrap"><i class="comment"></i></div>
-						<div>5 comments</div>
+						<div class="iconWrap"><i class="calendar"></i><p>31 mars</p></div>
+						<div class="iconWrap"><i class="comment"></i><p>5 comments</p></div>
 					</div>
 					<article>
 						<h1>Robin Thicke: Longest Hot 100
@@ -123,6 +116,8 @@
 							tenetur!</p>
 					</article>
 				</div>
+			</div>
+			<div class="item">
 				<div class="news" id="five">
 					<div class="pic">
 						<div class="hover">
@@ -131,10 +126,8 @@
 						<img src="img/news/strange_brand.jpg" alt="choose">
 					</div>
 					<div class="iconRow">
-						<div class="iconWrap"><i class="calendar"></i></div>
-						<div>31 mars</div>
-						<div class="iconWrap"><i class="comment"></i></div>
-						<div>5 comments</div>
+						<div class="iconWrap"><i class="calendar"></i><p>31 mars</p></div>
+						<div class="iconWrap"><i class="comment"></i><p>5 comments</p></div>
 					</div>
 					<article>
 						<h1>A Strange Brand of Happy</h1>
@@ -142,7 +135,7 @@
 					</article>
 				</div>
 			</div>
-			<div class="box3">
+			<div class="item">
 				<div class="news" id="three">
 					<div class="pic">
 						<div class="hover">
@@ -151,10 +144,8 @@
 						<img src="img/news/a-rod.jpg" alt="choose">
 					</div>
 					<div class="iconRow">
-						<div class="iconWrap"><i class="calendar"></i></div>
-						<div>31 mars</div>
-						<div class="iconWrap"><i class="comment"></i></div>
-						<div>5 comments</div>
+						<div class="iconWrap"><i class="calendar"></i><p>31 mars</p></div>
+						<div class="iconWrap"><i class="comment"></i><p>5 comments</p></div>
 					</div>
 					<article>
 						<h1>A-Rod, A Fraud, And A Waste Of
@@ -168,6 +159,8 @@
 							voluptatem?</p>
 					</article>
 				</div>
+			</div>
+			<div class="item">
 				<div class="news" id="six">
 					<div class="pic">
 						<div class="hover">
@@ -176,10 +169,8 @@
 						<img src="img/news/cosmos.jpg" alt="choose">
 					</div>
 					<div class="iconRow">
-						<div class="iconWrap"><i class="calendar"></i></div>
-						<div>31 mars</div>
-						<div class="iconWrap"><i class="comment"></i></div>
-						<div>5 comments</div>
+						<div class="iconWrap"><i class="calendar"></i><p>31 mars</p></div>
+						<div class="iconWrap"><i class="comment"></i><p>5 comments</p></div>
 					</div>
 					<article>
 						<h1>The whale-line is only two-thirds
@@ -189,6 +180,24 @@
 					</article>
 				</div>
 			</div>
+
+
+
+
+			
+
+
+
+
+			
+			
+
+
+			
+			
+
+
+			
 		</div>
 
 
@@ -200,7 +209,14 @@
 	$('.sidebar ').toggleClass('HeaderActive');
 	console.log('Hello')
  });
+
+var container2 = document.querySelector('#masonry');
+var msnry = new Masonry( container2, {
+  columnWidth: 0,
+  itemSelector: '.item'
+});
 </script>
+
 </body>
 
 </html>

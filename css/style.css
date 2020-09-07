@@ -164,9 +164,10 @@ header nav ul {
 
 header nav ul li {
   height: 79px;
-  min-width: 79px;
+  min-width: 85px;
   display: inline-flex;
   position: relative;
+  border-left: 1px solid rgba(97, 92, 92, 0.438);
 }
 
 header nav ul li a.m {
@@ -177,9 +178,13 @@ header nav ul li a.m {
   justify-content: center;
   flex-direction: row;
   cursor: pointer;
-  font-size: 17px;
+  font-size: 20px;
   color: #7a7575;
   font-family: montserrat;
+}
+
+header nav ul li a.m span {
+  font-size: 17px;
 }
 
 header nav ul li a.m:hover {
@@ -190,19 +195,20 @@ header nav ul li a.m:hover {
 ul.droop {
   position: absolute;
   top: 79px;
-  right: -30px;
-  height: 160px;
+  right: -50px;
+  height: 180px;
   display: none;
-  width: 160px;
-  box-shadow: 0 0 10px #aca9a9;
+  width: 185px;
+  border-top: 1px solid #cfcdcd;
+  box-shadow: 4px 4.5px 0 0 rgba(0, 0, 0, 0.18);
   transition: .5s;
 }
 
 ul.droop li {
-  height: 40px;
+  height: 45px;
   width: 100%;
-  border: 0.2px solid #cfcdcd;
-  background: whitesmoke;
+  border-top: 1px solid #cfcdcd;
+  background: #ffffff;
 }
 
 ul.droop li a {
@@ -217,12 +223,11 @@ ul.droop li a {
 
 ul.droop li a div {
   justify-content: space-between;
-  border-top: 0.2px solid #cfcdcd;
+  border-right: 0.2px solid #cfcdcd;
   padding: 10px;
 }
 
 ul.droop li a .t {
-  border-left: 0.2px solid #cfcdcd;
   width: 80%;
 }
 
@@ -230,40 +235,41 @@ li.share:hover ul.droop {
   display: block;
 }
 
-.container {
+.container1 {
   display: flex;
   width: 100%;
-  height: 1800px;
+  min-height: 1800px;
 }
 
-.container .sidebar {
+.container1 .sidebar {
   z-index: 1000;
   position: fixed;
   width: 70px;
   height: 100%;
   top: 79px;
-  background-color: #f0ecec;
+  background-color: #f9f9f9;
+  border-right: 1px solid #e7e7e7;
 }
 
-.container .sidebar .p a {
+.container1 .sidebar .p a {
   display: flex;
   position: relative;
   width: 69px;
   height: 69px;
   align-items: center;
   font-size: 17px;
-  border-bottom: 0.1px solid #cfcdcd;
+  border-bottom: 2px solid #e7e7e7;
   color: #14b9d6;
   transition: .2s;
   z-index: 1000;
 }
 
-.container .sidebar .p a i {
+.container1 .sidebar .p a i {
   position: absolute;
   left: 25px;
 }
 
-.container .sidebar .p a span {
+.container1 .sidebar .p a span {
   margin-left: 80px;
   padding-right: 30px;
   color: white;
@@ -271,7 +277,7 @@ li.share:hover ul.droop {
   display: none;
 }
 
-.container .sidebar .p a:hover {
+.container1 .sidebar .p a:hover {
   color: white;
   background-color: #14b9d6;
   border-bottom: 0.2px solid #14b9d6;
@@ -280,29 +286,29 @@ li.share:hover ul.droop {
   width: 170px;
 }
 
-.container .sidebar .p a:hover span {
+.container1 .sidebar .p a:hover span {
   display: block;
 }
 
-.container .sidebar .m a {
+.container1 .sidebar .m a {
   display: flex;
   position: relative;
   width: 69px;
   height: 69px;
   align-items: center;
   font-size: 17px;
-  border-bottom: 0.1px solid #cfcdcd;
+  border-bottom: 2px solid #e7e7e7;
   color: #e76049;
   transition: .2s;
   z-index: 1000;
 }
 
-.container .sidebar .m a i {
+.container1 .sidebar .m a i {
   position: absolute;
   left: 25px;
 }
 
-.container .sidebar .m a span {
+.container1 .sidebar .m a span {
   margin-left: 80px;
   padding-right: 30px;
   color: white;
@@ -310,7 +316,7 @@ li.share:hover ul.droop {
   display: none;
 }
 
-.container .sidebar .m a:hover {
+.container1 .sidebar .m a:hover {
   color: white;
   background-color: #e76049;
   border-bottom: 0.2px solid #e76049;
@@ -319,29 +325,29 @@ li.share:hover ul.droop {
   width: 170px;
 }
 
-.container .sidebar .m a:hover span {
+.container1 .sidebar .m a:hover span {
   display: block;
 }
 
-.container .sidebar .c a {
+.container1 .sidebar .c a {
   display: flex;
   position: relative;
   width: 69px;
   height: 69px;
   align-items: center;
   font-size: 17px;
-  border-bottom: 0.1px solid #cfcdcd;
+  border-bottom: 2px solid #e7e7e7;
   color: #2eb398;
   transition: .2s;
   z-index: 1000;
 }
 
-.container .sidebar .c a i {
+.container1 .sidebar .c a i {
   position: absolute;
   left: 25px;
 }
 
-.container .sidebar .c a span {
+.container1 .sidebar .c a span {
   margin-left: 80px;
   padding-right: 30px;
   color: white;
@@ -349,7 +355,7 @@ li.share:hover ul.droop {
   display: none;
 }
 
-.container .sidebar .c a:hover {
+.container1 .sidebar .c a:hover {
   color: white;
   background-color: #2eb398;
   border-bottom: 0.2px solid #2eb398;
@@ -358,29 +364,29 @@ li.share:hover ul.droop {
   width: 170px;
 }
 
-.container .sidebar .c a:hover span {
+.container1 .sidebar .c a:hover span {
   display: block;
 }
 
-.container .sidebar .v a {
+.container1 .sidebar .v a {
   display: flex;
   position: relative;
   width: 69px;
   height: 69px;
   align-items: center;
   font-size: 17px;
-  border-bottom: 0.1px solid #cfcdcd;
+  border-bottom: 2px solid #e7e7e7;
   color: #90899c;
   transition: .2s;
   z-index: 1000;
 }
 
-.container .sidebar .v a i {
+.container1 .sidebar .v a i {
   position: absolute;
   left: 25px;
 }
 
-.container .sidebar .v a span {
+.container1 .sidebar .v a span {
   margin-left: 80px;
   padding-right: 30px;
   color: white;
@@ -388,7 +394,7 @@ li.share:hover ul.droop {
   display: none;
 }
 
-.container .sidebar .v a:hover {
+.container1 .sidebar .v a:hover {
   color: white;
   background-color: #90899c;
   border-bottom: 0.2px solid #90899c;
@@ -397,29 +403,29 @@ li.share:hover ul.droop {
   width: 170px;
 }
 
-.container .sidebar .v a:hover span {
+.container1 .sidebar .v a:hover span {
   display: block;
 }
 
-.container .sidebar .s a {
+.container1 .sidebar .s a {
   display: flex;
   position: relative;
   width: 69px;
   height: 69px;
   align-items: center;
   font-size: 17px;
-  border-bottom: 0.1px solid #cfcdcd;
+  border-bottom: 2px solid #e7e7e7;
   color: #5692b1;
   transition: .2s;
   z-index: 1000;
 }
 
-.container .sidebar .s a i {
+.container1 .sidebar .s a i {
   position: absolute;
   left: 25px;
 }
 
-.container .sidebar .s a span {
+.container1 .sidebar .s a span {
   margin-left: 80px;
   padding-right: 30px;
   color: white;
@@ -427,7 +433,7 @@ li.share:hover ul.droop {
   display: none;
 }
 
-.container .sidebar .s a:hover {
+.container1 .sidebar .s a:hover {
   color: white;
   background-color: #5692b1;
   border-bottom: 0.2px solid #5692b1;
@@ -436,29 +442,29 @@ li.share:hover ul.droop {
   width: 170px;
 }
 
-.container .sidebar .s a:hover span {
+.container1 .sidebar .s a:hover span {
   display: block;
 }
 
-.container .sidebar .a a {
+.container1 .sidebar .a a {
   display: flex;
   position: relative;
   width: 69px;
   height: 69px;
   align-items: center;
   font-size: 17px;
-  border-bottom: 0.1px solid #cfcdcd;
+  border-bottom: 2px solid #e7e7e7;
   color: #f9b704;
   transition: .2s;
   z-index: 1000;
 }
 
-.container .sidebar .a a i {
+.container1 .sidebar .a a i {
   position: absolute;
   left: 25px;
 }
 
-.container .sidebar .a a span {
+.container1 .sidebar .a a span {
   margin-left: 80px;
   padding-right: 30px;
   color: white;
@@ -466,7 +472,7 @@ li.share:hover ul.droop {
   display: none;
 }
 
-.container .sidebar .a a:hover {
+.container1 .sidebar .a a:hover {
   color: white;
   background-color: #f9b704;
   border-bottom: 0.2px solid #f9b704;
@@ -475,29 +481,29 @@ li.share:hover ul.droop {
   width: 170px;
 }
 
-.container .sidebar .a a:hover span {
+.container1 .sidebar .a a:hover span {
   display: block;
 }
 
-.container .sidebar .b a {
+.container1 .sidebar .b a {
   display: flex;
   position: relative;
   width: 69px;
   height: 69px;
   align-items: center;
   font-size: 17px;
-  border-bottom: 0.1px solid #cfcdcd;
+  border-bottom: 2px solid #e7e7e7;
   color: #dd1787;
   transition: .2s;
   z-index: 1000;
 }
 
-.container .sidebar .b a i {
+.container1 .sidebar .b a i {
   position: absolute;
   left: 25px;
 }
 
-.container .sidebar .b a span {
+.container1 .sidebar .b a span {
   margin-left: 80px;
   padding-right: 30px;
   color: white;
@@ -505,7 +511,7 @@ li.share:hover ul.droop {
   display: none;
 }
 
-.container .sidebar .b a:hover {
+.container1 .sidebar .b a:hover {
   color: white;
   background-color: #dd1787;
   border-bottom: 0.2px solid #dd1787;
@@ -514,29 +520,29 @@ li.share:hover ul.droop {
   width: 170px;
 }
 
-.container .sidebar .b a:hover span {
+.container1 .sidebar .b a:hover span {
   display: block;
 }
 
-.container .sidebar .pl a {
+.container1 .sidebar .pl a {
   display: flex;
   position: relative;
   width: 69px;
   height: 69px;
   align-items: center;
   font-size: 17px;
-  border-bottom: 0.1px solid #cfcdcd;
+  border-bottom: 2px solid #e7e7e7;
   color: #e76049;
   transition: .2s;
   z-index: 1000;
 }
 
-.container .sidebar .pl a i {
+.container1 .sidebar .pl a i {
   position: absolute;
   left: 25px;
 }
 
-.container .sidebar .pl a span {
+.container1 .sidebar .pl a span {
   margin-left: 80px;
   padding-right: 30px;
   color: white;
@@ -544,7 +550,7 @@ li.share:hover ul.droop {
   display: none;
 }
 
-.container .sidebar .pl a:hover {
+.container1 .sidebar .pl a:hover {
   color: white;
   background-color: #e76049;
   border-bottom: 0.2px solid #e76049;
@@ -553,33 +559,37 @@ li.share:hover ul.droop {
   width: 170px;
 }
 
-.container .sidebar .pl a:hover span {
+.container1 .sidebar .pl a:hover span {
   display: block;
 }
 
-.container .sidebar .cg {
-  margin-top: 250px;
+.container1 .sidebar .cg {
+  border-top: 2px solid #e7e7e7;
+  background-color: #ffffff;
+  position: absolute;
+  top: 80vh;
+  left: 0;
 }
 
-.container .sidebar .cg a {
+.container1 .sidebar .cg a {
   display: flex;
   position: relative;
   width: 69px;
   height: 69px;
   align-items: center;
   font-size: 17px;
-  border-bottom: 0.1px solid #cfcdcd;
+  border-bottom: 2px solid #e7e7e7;
   color: #585858;
   transition: .2s;
   z-index: 1000;
 }
 
-.container .sidebar .cg a i {
+.container1 .sidebar .cg a i {
   position: absolute;
   left: 25px;
 }
 
-.container .sidebar .cg a span {
+.container1 .sidebar .cg a span {
   margin-left: 80px;
   padding-right: 30px;
   color: white;
@@ -587,7 +597,7 @@ li.share:hover ul.droop {
   display: none;
 }
 
-.container .sidebar .cg a:hover {
+.container1 .sidebar .cg a:hover {
   color: white;
   background-color: #585858;
   border-bottom: 0.2px solid #585858;
@@ -596,63 +606,62 @@ li.share:hover ul.droop {
   width: 170px;
 }
 
-.container .sidebar .cg a:hover span {
+.container1 .sidebar .cg a:hover span {
   display: block;
 }
 
-.container .grid-wrapper {
-  display: grid;
+.container1 #masonry {
   width: 100%;
-  margin: 80px 0 0 80px;
-  padding: 18px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 400px);
-  height: 1000px;
+  margin-left: 80px;
+  margin-top: 80px;
+  min-height: 1600px;
 }
 
-.container .grid-wrapper .box1 {
-  padding: 8px;
+.container1 #masonry .item {
+  width: 33%;
 }
 
-.container .grid-wrapper .box2 {
-  margin-left: 10px;
-  padding: 8px;
-}
-
-.container .grid-wrapper .box3 {
-  padding: 8px;
-  margin-left: 10px;
-}
-
-.container .grid-wrapper .news {
+.container1 #masonry .item .news {
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
+  border: 1px solid #ebebeb;
+  position: relative;
+  padding: 10px;
 }
 
-.container .grid-wrapper .news .iconRow {
+.container1 #masonry .item .news .iconRow {
   margin-bottom: 20px;
-  margin-left: 20px;
+  margin-left: 10px;
   margin-top: 20px;
-  width: 220px;
+  width: 270px;
   height: 15px;
   display: flex;
   font-family: monseratR;
-  font-size: 14px;
-  color: dimgray;
-  justify-content: space-between;
-}
-
-.container .grid-wrapper .news .iconRow .iconWrap {
-  width: 14px;
-  height: 13px;
+  font-size: 15px;
   color: #9d9d9d;
 }
 
-.container .grid-wrapper .news article {
+.container1 #masonry .item .news .iconRow .iconWrap {
+  display: flex;
+  width: 100px;
+  height: 15px;
+  color: #9d9d9d;
+}
+
+.container1 #masonry .item .news .iconRow .iconWrap .calendar {
+  margin-right: 7px;
+  padding-bottom: 3px;
+}
+
+.container1 #masonry .item .news .iconRow .iconWrap .comment {
+  margin-right: 9px;
+}
+
+.container1 #masonry .item .news article {
   padding: 2%;
 }
 
-.container .grid-wrapper .news article h1 {
+.container1 #masonry .item .news article h1 {
   font-family: montserrat;
   font-size: 26px;
   font-weight: bold;
@@ -664,7 +673,7 @@ li.share:hover ul.droop {
   color: #313131;
 }
 
-.container .grid-wrapper .news article p {
+.container1 #masonry .item .news article p {
   margin-top: 20px;
   margin-bottom: 20px;
   font-family: OpenSans;
@@ -681,7 +690,6 @@ li.share:hover ul.droop {
 .pic {
   width: 100%;
   position: relative;
-  min-height: 150px;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -694,23 +702,23 @@ li.share:hover ul.droop {
 }
 
 .news#one {
-  border-bottom: 5px solid  #2eb398;
+  border-bottom: 5px solid #2eb398 !important;
 }
 
 .news#two {
-  border-bottom: 5px solid #e76049;
+  border-bottom: 5px solid #e76049 !important;
 }
 
 .news#three {
-  border-bottom: 5px solid darkblue;
+  border-bottom: 5px solid darkblue !important;
 }
 
 .news#five {
-  border-bottom: 5px solid #90899c;
+  border-bottom: 5px solid #90899c !important;
 }
 
 .news#six {
-  border-bottom: 5px solid  #14b9d6;
+  border-bottom: 5px solid #14b9d6 !important;
 }
 
 .news .pic .hover {
@@ -718,7 +726,6 @@ li.share:hover ul.droop {
   left: 0;
   right: 0;
   top: 0;
-  z-index: 333;
   width: 100%;
   height: 100%;
   background: rgba(255, 68, 0, 0);
@@ -731,7 +738,6 @@ li.share:hover ul.droop {
   display: block;
   width: 300px;
   opacity: 0;
-  z-index: 333;
   margin: 0 auto;
   transition: .5s;
 }
@@ -759,21 +765,21 @@ li.share:hover ul.droop {
   }
   header nav .burger {
     display: block;
-    z-index: 1001;
+    z-index: 1010;
   }
-  .container .sidebar {
+  .container1 .sidebar {
     left: -70px;
     transition: .5s;
   }
-  .container .grid-wrapper {
-    margin: 79px 0 0 0;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1100px);
-    height: 2000px;
-    padding: 5px;
-  }
-  .container .grid-wrapper .box2 {
+  .container1 #masonry {
     margin-left: 0;
+  }
+  .container1 #masonry .item {
+    width: 49.5%;
+  }
+  .container1 #masonry .item .news {
+    margin: 0;
+    padding: 0;
   }
   .HeaderActive {
     position: fixed;
@@ -783,20 +789,12 @@ li.share:hover ul.droop {
 }
 
 @media (max-width: 480px) {
-  .container .grid-wrapper {
+  .container1 #masonry {
     display: block;
-    padding: 0;
   }
-  .container .grid-wrapper .box1 {
+  .container1 #masonry .item {
+    width: 100%;
     padding: 0;
-  }
-  .container .grid-wrapper .box2 {
-    padding: 0;
-    margin: 0;
-  }
-  .container .grid-wrapper .box3 {
-    padding: 0;
-    margin: 0;
   }
 }
 
