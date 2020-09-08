@@ -5,10 +5,10 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css">
-	<title>Serhii Ovsianykov Test  3</title>
-	<script src="js/jQuery.js"></script>
+	<title>Serhii Ovsianykov Test Task</title>
+	<!-- <script src="js/jQuery.js"></script> -->
 	<script src="js/script.js"></script>
-	<script src='js/masonry.pkgd.min.js'></script>
+	<!-- <script src='js/masonry.pkgd.min.js'></script> -->
 
 </head>
 
@@ -204,19 +204,21 @@
 
 
 	</div>
-<script>
-	$('.burger').click(function () {
-	$('.sidebar ').toggleClass('HeaderActive');
-	console.log('Hello')
- });
 
-var container2 = document.querySelector('#masonry');
-var msnry = new Masonry( container2, {
-  columnWidth: 0,
-  itemSelector: '.item'
-});
-</script>
 
+
+	<script>
+		// 	$('.burger').click(function () {
+		// 	$('.sidebar ').toggleClass('HeaderActive');
+		// 	console.log('Hello')
+		//  });
+		
+		var container2 = document.querySelector('#masonry');
+		var msnry = new Masonry( container2, {
+		  columnWidth: 1,
+		  itemSelector: '.item'
+		});
+		</script>
 </body>
 
 </html>
